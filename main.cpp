@@ -1,5 +1,10 @@
 #include <iostream>
 
+void testVehicleObject()
+{
+    
+}
+
 int main()
 {
     std::cout << "Test" << std::endl;
