@@ -3,7 +3,7 @@
 
 void testVehicleObject()
 {
-    Vehicle vehicle1();
+    Vehicle vehicle1;
     Vehicle vehicle2("Toyota"); 
 
     std::cout << vehicle1.getDescription() << std::endl;
