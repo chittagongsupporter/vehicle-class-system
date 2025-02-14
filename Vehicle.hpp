@@ -7,5 +7,5 @@ class Vehicle
 public:
 
 private:
-    
+    std::string brand;
 };
