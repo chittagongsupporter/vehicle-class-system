@@ -5,6 +5,10 @@ void testVehicleObject()
 {
     Vehicle vehicle1();
     Vehicle vehicle2("Toyota"); 
+
+    std::cout << vehicle1.getDescription() << std::endl;
+    std::cout << vehicle2.getDescription() << std::endl;
+
 }
 
 int main()
