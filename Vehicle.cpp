@@ -6,3 +6,8 @@ Vehicle::Vehicle(std::string brand)
 {
     this->brand = brand;
 }
+
+const std::string& Vehicle::getDescription() const
+{
+    return brand;
+}
