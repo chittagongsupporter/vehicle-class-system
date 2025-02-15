@@ -9,6 +9,8 @@ public:
     Car();
     Car(const std::string& brand, int doors);
 
+    // Getter
+    int getDoors() const;
 private:
     int doors;
 };
