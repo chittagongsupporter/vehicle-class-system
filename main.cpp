@@ -22,7 +22,9 @@ void testCarObject()
 
 int main()
 {
+    std::cout << "Testing vehicle object" << std::endl;
     testVehicleObject();
+    std::cout << "\nTesting car object" << std::endl;
     testCarObject();
     std::cout << "Test" << std::endl;
     return 0;
