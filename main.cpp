@@ -23,6 +23,7 @@ void testCarObject()
 int main()
 {
     testVehicleObject();
+    testCarObject();
     std::cout << "Test" << std::endl;
     return 0;
 }
