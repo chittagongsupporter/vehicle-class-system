@@ -1,4 +1,5 @@
 #include "Car.hpp"
+#include <iostream>
 
 // Default constructor
 Car::Car() : Vehicle(), doors(4) 
@@ -19,5 +20,6 @@ int Car::getDoors() const
 // Override the getDescription method from Vehicle
 const std::string& Car::getDescription() const
 {
+    std::cout << "Car brand: " << std::endl;
     return brand;
 }
