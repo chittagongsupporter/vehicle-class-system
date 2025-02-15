@@ -9,6 +9,6 @@ public:
     Vehicle(std::string brand);
 
     virtual const std::string& getDescription() const;
-private:
+protected:
     std::string brand;
 };
