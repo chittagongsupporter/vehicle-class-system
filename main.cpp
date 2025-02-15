@@ -11,6 +11,11 @@ void testVehicleObject()
 
 }
 
+void testCarObject()
+{
+    
+}
+
 int main()
 {
     testVehicleObject();
