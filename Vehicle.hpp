@@ -10,7 +10,7 @@ public:
 
     virtual const std::string& getDescription() const;
 
-    Vehicle::~Vehicle() {}
+    virtual ~Vehicle() {}
 protected:
     std::string brand;
 };
