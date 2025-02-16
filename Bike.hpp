@@ -6,4 +6,5 @@ class Bike
 {
 public:
 private:
+    bool gears;
 }
