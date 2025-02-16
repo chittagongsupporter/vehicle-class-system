@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Vehicle.hpp"
 #include "Car.hpp"
-
+#include "Bike.hpp"
 void testVehicleObject()
 {
     Vehicle vehicle1;
@@ -20,12 +20,23 @@ void testCarObject()
     std::cout << "Car2 doors: " << car2.getDoors() << std::endl; // Should print 2 doors   
 }
 
+void testBikeObject()
+{
+    Bike bike1;
+    std::cout << bike1.getDescription() << std::endl;
+    
+    Bike bike2("Giant", true);
+    std::cout << bike2.getDescription() << std::endl;  
+    std::cout << "Bike2 has gears: " << (bike2.hasGears() ? "Yes" : "No") << std::endl; 
+}
+
 int main()
 {
     std::cout << "Testing vehicle object" << std::endl;
     testVehicleObject();
     std::cout << "\nTesting car object" << std::endl;
     testCarObject();
-    std::cout << "Test" << std::endl;
+    std::cout << "\nTesting bike object" << std::endl;
+    testBikeObject();
     return 0;
 }
