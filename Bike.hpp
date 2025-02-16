@@ -2,20 +2,20 @@
 
 #include "Vehicle.hpp"
 
-class Car : public Vehicle
+class Bike : public Vehicle
 {
 public:
     // Constructors
-    Car();
-    Car(const std::string& brand, int doors);
+    Bike();
+    Bike(const std::string& brand, bool hasGears);
 
     // Getter
-    int getDoors() const;
+    bool hasGears() const;
 
     // Override getDescription() of parent class
     const std::string& getDescription() const override;
 
-    ~Car() {}
+    ~Bike() {}
 private:
-    int doors;
+    bool gears;
 };
