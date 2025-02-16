@@ -2,7 +2,7 @@
 
 #include "Vehicle.hpp"
 
-class Bike
+class Bike : public Vehicle
 {
 public:
     // Constructors
