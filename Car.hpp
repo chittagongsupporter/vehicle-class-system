@@ -15,6 +15,7 @@ public:
     // Override getDescription() of parent class
     const std::string& getDescription() const override;
 
+    Car::~Car() {}
 private:
     int doors;
 };

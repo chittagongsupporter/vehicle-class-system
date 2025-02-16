@@ -15,6 +15,7 @@ public:
     // Override getDescription() of parent class
     const std::string& getDescription() const override;
 
+    Bike::~Bike() {}
 private:
     bool gears;
 };
