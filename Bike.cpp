@@ -1,4 +1,5 @@
 #include "Bike.hpp"
+#include <iostream>
 
 // Default constructor
 Bike::Bike() : Vehicle(), gears(false) {}
@@ -11,7 +12,13 @@ bool Bike::hasGears() const {
     return gears;
 }
 
+// Getter for brakeType
+const std::string& Bike::getBrakeType() const {
+    return brakeType;
+}
+
 // Override getDescription to provide bike-specific details
 const std::string& Bike::getDescription() const {
+    std::cout << "Bike brand" << std::endl;
     return brand;
 }

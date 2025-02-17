@@ -9,8 +9,10 @@ public:
     Bike();
     Bike(const std::string& brand, bool hasGears);
 
-    // Getter
+    // Getters
     bool hasGears() const;
+    std::string& getBrakeType() const;
+
 
     // Override getDescription() of parent class
     const std::string& getDescription() const override;
@@ -18,4 +20,5 @@ public:
     ~Bike() {}
 private:
     bool gears;
+    std::string brakeType;
 };
