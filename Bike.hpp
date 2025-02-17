@@ -18,4 +18,5 @@ public:
     ~Bike() {}
 private:
     bool gears;
+    std::string brakeType;
 };
