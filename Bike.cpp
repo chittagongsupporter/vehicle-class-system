@@ -17,6 +17,16 @@ const std::string& Bike::getBrakeType() const {
     return brakeType;
 }
 
+// Setters
+void Bike::setGears(bool hasGears) {
+    gears = hasGears;
+}
+
+void Bike::setBrakeType(const std::string& brakeType) {
+    this->brakeType = brakeType;
+}
+
+
 // Override getDescription to provide bike-specific details
 const std::string& Bike::getDescription() const {
     std::cout << "Bike brand" << std::endl;
