@@ -11,7 +11,7 @@ public:
 
     // Getters
     bool hasGears() const;
-    std::string& getBrakeType() const;
+    const std::string& getBrakeType() const;
 
 
     // Override getDescription() of parent class
