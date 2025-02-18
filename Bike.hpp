@@ -13,6 +13,9 @@ public:
     bool hasGears() const;
     const std::string& getBrakeType() const;
 
+    // Setters
+    void setGears(bool hasGears);
+    void setBrakeType(const std::string& brakeType);
 
     // Override getDescription() of parent class
     const std::string& getDescription() const override;
