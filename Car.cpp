@@ -20,6 +20,6 @@ int Car::getDoors() const
 // Override the getDescription method from Vehicle
 const std::string& Car::getDescription() const
 {
-    std::cout << "Car brand: " << std::endl;
+    std::cout << "Car brand: " << brand << ", Doors: " << doors << std::endl;
     return brand;
 }
