@@ -1,5 +1,6 @@
 #include "Bike.hpp"
 #include <iostream>
+#include <stdexcept>
 
 // Default constructor
 Bike::Bike() : Vehicle(), gears(false) {}
@@ -23,6 +24,9 @@ void Bike::setGears(bool hasGears) {
 }
 
 void Bike::setBrakeType(const std::string& brakeType) {
+    if (brakeType.empty()) {
+        throw std::invalid_argument("Brake type cannot be empty");
+    }
     this->brakeType = brakeType;
 }
 
