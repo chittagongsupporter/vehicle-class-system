@@ -13,4 +13,5 @@ public:
     virtual ~Vehicle() {}
 protected:
     std::string brand;
+    std::string model;
 };
