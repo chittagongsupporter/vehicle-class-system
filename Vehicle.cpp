@@ -13,3 +13,8 @@ const std::string& Vehicle::getDescription() const
     std::cout << "Vehicle brand:" << std::endl;
     return brand;
 }
+
+void Vehicle::setModel(const std::string& model)
+{
+    this->model = model;
+}
