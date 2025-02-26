@@ -8,6 +8,10 @@ Vehicle::Vehicle(std::string brand)
     this->brand = brand;
 }
 
+void Vehicle::setBrand(const std::string& brand) {
+    this->brand = brand;
+}
+
 const std::string& Vehicle::getDescription() const
 {
     std::cout << "Vehicle brand:" << std::endl;
